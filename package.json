@@ -1,11 +1,16 @@
 {
-  "name": "safesearchdetectiongooglecloudapi",
-  "version": "1.0.0",
-  "description": "Detect explicit content (adult, violent, etc.) within images with Google Cloud Vision API",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Aleksandra Zuchewicz",
-  "license": "ISC"
+    "name": "safesearchdetectiongooglecloudapi",
+    "version": "1.0.0",
+    "description": "Detect explicit content (adult, violent, etc.) within images with Google Cloud Vision API",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "oneImage": "node ./oneScreenshotSaveSearch/oneImageSaveSearch.js ./token.json ./screenshots/google.png"
+
+    },
+    "author": "Aleksandra Zuchewicz",
+    "license": "ISC",
+    "dependencies": {
+        "@google-cloud/vision": "^1.11.0"
+    }
 }
