@@ -13,11 +13,11 @@ const testFolder = process.argv[SCREENS_FOLDER_ARG];
     for (const file of files) {
         const [result] = await client.safeSearchDetection(`${testFolder}/${file}`);
         const detections = result.safeSearchAnnotation;
-        console.log("Safe search:");
+        console.log(`Safe search: ${file}`);
         console.log(`Adult: ${detections.adult}`);
         console.log(`Medical: ${detections.medical}`);
         console.log(`Spoof: ${detections.spoof}`);
         console.log(`Violence: ${detections.violence}`);
-        console.log(`Racy: ${detections.racy}`);
+        console.log(`Racy: ${detections.racy} \n`);
     }
 })();
