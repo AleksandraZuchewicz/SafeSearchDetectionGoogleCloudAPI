@@ -6,12 +6,14 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "oneImage": "node ./oneScreenshotSaveSearch/oneImageSaveSearch.js ./token.json ./screenshots/google.png",
-        "multipleImages": "node ./multipleScreenshotsSaveSearch/multipleScreenshots.js ./token.json ./screenshots/"
-
+        "multipleImages": "node ./multipleScreenshotsSaveSearch/multipleScreenshots.js ./token.json ./screenshots/",
+        "urlsFromExcel": "node multipleUrlsFromExcelSaveSearch/prepereScreenshots.js &&  node multipleUrlsFromExcelSaveSearch/multipleUrlsFromExcel.js ./token.json"
     },
     "author": "Aleksandra Zuchewicz",
     "license": "ISC",
     "dependencies": {
-        "@google-cloud/vision": "^1.11.0"
+        "@google-cloud/vision": "^1.11.0",
+        "node-xlsx": "^0.15.0",
+        "selenium-webdriver": "^4.0.0-alpha.7"
     }
 }
