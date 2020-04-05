@@ -5,7 +5,8 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "oneImage": "node ./oneScreenshotSaveSearch/oneImageSaveSearch.js ./token.json ./screenshots/google.png"
+        "oneImage": "node ./oneScreenshotSaveSearch/oneImageSaveSearch.js ./token.json ./screenshots/google.png",
+        "multipleImages": "node ./multipleScreenshotsSaveSearch/multipleScreenshots.js ./token.json ./screenshots/"
 
     },
     "author": "Aleksandra Zuchewicz",
